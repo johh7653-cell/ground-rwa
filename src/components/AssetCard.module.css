@@ -1,0 +1,130 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 23px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.card:focus-within,
+.card:hover {
+  border-color: #48545a;
+  background: var(--surface-alt);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.glyph {
+  display: inline-flex;
+  color: var(--text);
+}
+
+.category {
+  color: var(--subtle);
+  font-size: 11px;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.symbol {
+  margin: 0 0 8px;
+  font-size: 27px;
+  font-weight: 650;
+  letter-spacing: -0.7px;
+  line-height: 1.2;
+}
+
+.exposure {
+  min-height: 46px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.information {
+  margin-top: 20px;
+  padding-top: 17px;
+  border-top: 1px solid var(--line);
+}
+
+.issuer {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--subtle);
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 49px;
+  margin-top: 16px;
+  font-variant-numeric: tabular-nums;
+}
+
+.price strong {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.price span {
+  color: var(--subtle);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 34px;
+  margin-top: 16px;
+  padding-top: 8px;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .card { padding: 20px; }
+  .top { margin-bottom: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card { transition: none; }
+}

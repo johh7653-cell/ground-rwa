@@ -1,0 +1,45 @@
+.walletButton { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 13px; background: var(--accent); border: 1px solid var(--accent); border-radius: 6px; color: var(--accent-ink); font: inherit; font-size: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.walletButton[data-connected=true] { background: var(--surface); border-color: var(--line); color: var(--text); }
+.walletButton:hover { filter: brightness(1.08); }
+.walletButton:disabled { opacity: .6; cursor: wait; }
+.walletButton:focus-visible, .closeButton:focus-visible, .smallButton:focus-visible, .refreshButton:focus-visible, .walletOption:focus-visible, .dialog a:focus-visible, .accountSelect select:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.dialog { position: fixed; inset: 0; padding: 0; width: min(460px, calc(100vw - 28px)); max-height: calc(100dvh - 40px); margin: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--text); box-shadow: 0 24px 80px #0008; overflow-y: auto; }
+.dialog::backdrop { background: #000b; }
+.dialogContent { padding: 26px; }
+.dialogHeading { display: flex; justify-content: space-between; align-items: flex-start; gap: 15px; margin-bottom: 20px; }
+.eyebrow { color: var(--accent); font-size: 10px; letter-spacing: 1.2px; margin: 0 0 9px; }
+.dialog h2 { font-size: 21px; letter-spacing: -.4px; line-height: 1.4; margin: 0; }
+.dialog h3 { font-size: 13px; line-height: 1.5; margin: 0 0 13px; }
+.closeButton { color: var(--muted); border: 0; background: transparent; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 5px; cursor: pointer; flex-shrink: 0; margin: -8px -8px 0 0; }
+.closeButton:hover { background: var(--surface-alt); color: var(--text); }
+.description { color: var(--muted); font-size: 12px; line-height: 1.8; margin: 0 0 21px; }
+.walletList { margin-top: 22px; }
+.walletOption { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 16px; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; color: var(--text); font: inherit; font-size: 13px; margin-top: 9px; cursor: pointer; }
+.walletOption > span { display: flex; gap: 12px; align-items: center; }
+.walletOption small { color: var(--accent); font-size: 11px; }
+.walletOption:hover { border-color: var(--accent); }
+.walletOption:disabled { cursor: default; opacity: .65; }
+.installPanel { padding: 19px; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; }
+.installPanel > p { color: var(--muted); font-size: 12px; line-height: 1.8; margin: 0; }
+.installLinks { display: flex; flex-wrap: wrap; gap: 17px; margin: 18px 0 14px; }
+.installLinks a, .actions a { color: var(--accent); display: inline-flex; align-items: center; gap: 6px; font-size: 12px; }
+.accountPanel { border: 1px solid var(--line); border-radius: 6px; padding: 19px; background: var(--bg); }
+.accountHeader { display: flex; align-items: center; gap: 8px; font-size: 13px; margin-bottom: 17px; }
+.accountHeader > svg { color: var(--accent); }
+.connectedBadge { font-size: 10px; color: var(--accent); margin-left: auto; }
+.address { display: block; font-size: 11px; color: var(--muted); line-height: 1.8; overflow-wrap: anywhere; user-select: all; }
+.accountSelect { display: block; font-size: 11px; color: var(--muted); margin-bottom: 15px; }
+.accountSelect select { display: block; background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 5px; font: inherit; width: 100%; padding: 10px; margin-top: 7px; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 14px; }
+.smallButton { display: inline-flex; align-items: center; justify-content: center; gap: 6px; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 5px; font: inherit; font-size: 11px; min-height: 38px; padding: 8px 11px; cursor: pointer; }
+.smallButton:disabled, .refreshButton:disabled { opacity: .45; cursor: not-allowed; }
+.balanceRow { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.balanceRow p { color: var(--muted); font-size: 11px; margin: 0 0 8px; }
+.balanceRow strong { font-size: 21px; font-weight: 500; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.refreshButton { background: transparent; border: 1px solid var(--line); color: var(--muted); border-radius: 5px; display: grid; place-items: center; width: 38px; height: 38px; cursor: pointer; flex-shrink: 0; }
+.note, .installPanel > p.note { color: var(--subtle); font-size: 10px; line-height: 1.8; margin: 11px 0 0; }
+.status, .error { color: var(--muted); font-size: 12px; line-height: 1.8; margin: 16px 0 0; }
+.status:empty, .error:empty { display: none; }
+.error { color: #f2bbab; }
+.footerNote { color: var(--subtle); font-size: 10px; line-height: 1.8; margin: 23px 0 0; padding-top: 17px; border-top: 1px solid var(--line); }
+@media(max-width: 450px) { .walletButton { width: 44px; min-width: 44px; padding: 0; } .buttonLabel { display: none; } .dialogContent { padding: 21px; } .dialog h2 { font-size: 19px; } .accountPanel { padding: 16px; } }

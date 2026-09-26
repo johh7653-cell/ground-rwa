@@ -1,0 +1,46 @@
+.layout {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:24px;align-items:start;margin:30px 0;}
+.panel {background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:27px;min-width:0;}
+.panel h2 {font-size:19px;margin:0;letter-spacing:-.02em;line-height:1.4;}
+.panelHeading {display:flex;justify-content:space-between;align-items:center;gap:15px;}
+.panelHeading > span {font-size:10px;color:var(--muted);}
+.notice {font-size:11px;color:var(--muted);border-left:2px solid var(--accent);padding:8px 11px;margin:20px 0;}
+.field label {display:block;font-size:12px;color:var(--muted);margin-bottom:8px;}
+.field input,.field select {width:100%;font-size:12px;padding:12px;min-width:0;}
+.field select {margin-top:9px;}
+.help {font-size:11px;color:var(--subtle);line-height:1.75;margin:9px 0 0;}
+.amountBox,.receiveBox {border:1px solid var(--line);border-radius:7px;padding:17px;margin-top:23px;background:var(--bg);}
+.amountBox label,.receiveBox>span {display:block;font-size:11px;color:var(--muted);}
+.amountBox > div {display:flex;align-items:center;gap:15px;margin-top:8px;}
+.amountBox input {background:transparent;border:0;outline:0;min-width:0;width:100%;font-size:30px;padding:0;}
+.amountBox:focus-within {border-color:var(--accent);}
+.amountBox strong {font-size:14px;font-weight:500;}
+.amountBox>span {font-size:10px;color:var(--subtle);display:block;margin-top:10px;}
+.arrow {display:flex;justify-content:center;color:var(--muted);margin:12px 0 -10px;}
+.receiveBox {margin-top:0;}
+.receiveBox>div {display:flex;justify-content:space-between;align-items:center;gap:15px;margin-top:10px;}
+.receiveBox strong {font-size:30px;font-weight:500;overflow-wrap:anywhere;}
+.receiveBox div>span {font-size:14px;}
+.receiveBox p {font-size:11px;color:var(--muted);margin:5px 0 0;}
+.receiveBox small {display:block;font-size:10px;color:var(--subtle);margin-top:12px;line-height:1.7;}
+.slippage {display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:22px;font-size:12px;color:var(--muted);}
+.slippage>div {display:flex;gap:7px;align-items:center;}
+.slippage input {width:75px;padding:7px 9px;font-size:12px;}
+.validation {font-size:11px;color:#f2bbab;margin-top:15px;}
+.walletState {display:flex;gap:9px;align-items:center;font-size:11px;color:var(--muted);margin:23px 0 12px;}
+.panel>button:global(.button) {width:100%;}
+.panel>a {margin-top:20px;font-size:12px;}
+.side {display:grid;gap:20px;min-width:0;}
+.identity {display:flex;align-items:flex-start;gap:13px;}
+.identity img {border-radius:5px;object-fit:contain;}
+.identity p {font-size:12px;color:var(--muted);margin:4px 0 0;}
+.identity small {font-size:10px;color:var(--subtle);}
+.marketLabel {font-size:11px;color:var(--muted);margin:27px 0 6px;}
+.price {font-size:34px;font-weight:500;letter-spacing:-.02em;margin:0;overflow-wrap:anywhere;}
+.refresh {display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:5px;padding:7px 10px;background:transparent;color:var(--text);font-size:11px;margin-top:17px;}
+.facts {margin:22px 0 0;}
+.facts>div {display:flex;justify-content:space-between;gap:18px;border-top:1px solid var(--line);padding:11px 0;font-size:11px;}
+.facts dt {color:var(--muted);}
+.facts dd {margin:0;text-align:right;font-variant-numeric:tabular-nums;}
+.address {display:block;overflow-wrap:anywhere;font-size:11px;color:var(--text);line-height:1.8;margin:8px 0 15px;}
+@media(max-width:850px) {.layout {grid-template-columns:minmax(0,1fr);}.panel {padding:23px;}}
+@media(max-width:450px) {.panel {padding:20px;}.panelHeading {align-items:flex-start;}.panelHeading>span {font-size:9px;}.amountBox input,.receiveBox strong {font-size:26px;}}

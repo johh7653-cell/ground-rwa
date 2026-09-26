@@ -1,0 +1,22 @@
+.calculator { margin-top:35px; padding-top:30px; }
+.heading { display:flex; justify-content:space-between; align-items:flex-end; gap:24px; margin-bottom:24px; }
+.heading p { color:var(--muted); font-size:11px; margin-bottom:11px; }
+.heading h2 { font-size:30px; margin:0; }
+.heading label { font-size:11px; color:var(--muted); width:210px; flex-shrink:0; }
+.input { display:flex; align-items:center; border:1px solid var(--line); background:var(--surface); border-radius:6px; padding:0 12px; gap:6px; margin-top:7px; }
+.input input { width:100%; min-width:0; background:transparent; border:0; outline:0; padding:10px 0; color:var(--text); font-size:17px; }
+.input:focus-within { border-color:var(--accent); }
+.input > small { font-size:10px; }
+.grid { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:12px; }
+.grid article { padding:18px; min-width:0; border:1px solid var(--line); border-radius:8px; background:var(--surface); }
+.top { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.top img { object-fit:contain; border-radius:4px; }
+.top span { color:var(--subtle); font-size:9px; }
+.grid h3 { font-size:19px; margin:19px 0 6px; }
+.grid p { color:var(--muted); font-size:10px; min-height:35px; line-height:1.6; }
+.grid strong { display:block; font-size:22px; font-weight:500; letter-spacing:-.02em; overflow-wrap:anywhere; }
+.grid small { display:block; color:var(--muted); font-size:10px; line-height:1.6; min-height:33px; margin-top:5px; }
+.grid a { display:flex; align-items:center; justify-content:space-between; font-size:10px; color:var(--accent); border-top:1px solid var(--line); margin-top:17px; padding-top:13px; gap:6px; }
+.calculator > p { margin-top:17px; }
+@media(max-width:1000px) { .grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media(max-width:600px) { .heading { flex-direction:column; align-items:flex-start; } .heading h2 { font-size:27px; } .heading label { width:100%; } .grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .grid article { padding:16px; } }

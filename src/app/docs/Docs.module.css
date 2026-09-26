@@ -1,0 +1,24 @@
+.page { padding-bottom:80px; }
+.contents { display:flex; flex-wrap:wrap; gap:10px 24px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:16px 0; font-size:12px; color:var(--accent); }
+.page section { margin-top:46px; scroll-margin-top:100px; }
+.page h2 { font-size:28px; margin-bottom:19px; }
+.page h3 { font-size:17px; margin-bottom:12px; }
+.page section > p { color:var(--muted); font-size:14px; line-height:1.9; max-width:890px; }
+.four { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-bottom:22px; }
+.four > div { border:1px solid var(--line); background:var(--surface); padding:23px; border-radius:8px; }
+.four p { color:var(--muted); font-size:12px; line-height:1.8; margin:0; }
+.four a { margin-top:15px; font-size:12px; }
+.tableScroll { overflow-x:auto; border:1px solid var(--line); border-radius:8px; }
+.tableScroll table { width:100%; border-collapse:collapse; text-align:left; font-size:12px; }
+.tableScroll th,.tableScroll td { padding:16px 20px; border-bottom:1px solid var(--line); line-height:1.8; }
+.tableScroll thead { background:var(--surface); }
+.tableScroll th { font-weight:500; }
+.tableScroll td { color:var(--muted); }
+.tableScroll code { color:var(--text); font-size:11px; white-space:nowrap; }
+.endpoints { border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+.endpoints a { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.9fr) 16px; align-items:center; gap:20px; padding:19px 23px; }
+.endpoints a + a { border-top:1px solid var(--line); }
+.endpoints a:hover { background:var(--surface); }
+.endpoints code { font-size:12px; overflow-wrap:anywhere; }
+.endpoints span { color:var(--muted); font-size:11px; }
+@media(max-width:600px) { .four { grid-template-columns:minmax(0,1fr); } .page h2 { font-size:25px; } .endpoints a { grid-template-columns:minmax(0,1fr) 16px; gap:10px; padding:17px; } .endpoints a span { grid-column:1; grid-row:2; } .endpoints svg { grid-row:1;grid-column:2; } }

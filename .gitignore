@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.DS_Store
+.env*
+!.env.example
+
+# Local design exploration and downloadable source bundle
+docs/design/
+/ground-source.zip

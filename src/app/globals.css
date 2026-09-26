@@ -80,8 +80,7 @@ h3 { letter-spacing: -.025em; line-height: 1.35; }
 .hero h1 { font-size: clamp(40px, 4.1vw, 59px); font-weight: 600; margin-bottom: 25px; line-height: 1.18; letter-spacing: -.048em; }
 .hero h1 span { display: block; white-space: nowrap; }
 .hero-description { font-size: 16px; color: var(--muted); max-width: 390px; line-height: 1.8; margin-bottom: 30px; }
-.hero-contract { width:fit-content; max-width:100%; margin-bottom:22px; padding:10px 14px; border:1px solid var(--line); border-radius:7px; background:var(--surface); }
-.hero-contract code { color:var(--accent); font-size:16px; font-weight:600; }
+.contract-section { margin-top:28px; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 .section { padding-block: 32px 14px; }
 .section-title { margin-bottom: 28px; }

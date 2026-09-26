@@ -6,11 +6,12 @@ import { project } from "@/lib/project";
 
 export function ProjectContractAddress({ className = "" }: { className?: string }) {
   const [feedback, setFeedback] = useState("");
+  const address = project.contractAddress.trim();
 
   async function copyAddress() {
-    if (!project.contractAddress) return;
+    if (!address) return;
     try {
-      await navigator.clipboard.writeText(project.contractAddress);
+      await navigator.clipboard.writeText(address);
       setFeedback("Address copied.");
     } catch {
       setFeedback("Copy unavailable. Select and copy the address manually.");
@@ -20,8 +21,8 @@ export function ProjectContractAddress({ className = "" }: { className?: string 
   return (
     <div className={`project-address ${className}`} role="group" aria-label="GROUND Solana contract address">
       <span>Solana CA</span>
-      <code>{project.contractAddress || "TBA"}</code>
-      {project.contractAddress ? <button type="button" onClick={copyAddress} aria-label="Copy contract address"><Copy size={16} aria-hidden="true" /></button> : null}
+      <code>{address || "TBA"}</code>
+      {address ? <button type="button" onClick={copyAddress} aria-label="Copy contract address"><Copy size={16} aria-hidden="true" /></button> : null}
       <span className="note contract-feedback" role="status">{feedback}</span>
     </div>
   );
@@ -29,11 +30,11 @@ export function ProjectContractAddress({ className = "" }: { className?: string 
 
 export function ProjectChannels() {
   const links = [
-    { label: "X", url: project.xUrl },
-    { label: "GitHub", url: project.githubUrl },
-    { label: "Explorer", url: project.explorerUrl },
-    { label: "Buy", url: project.buyUrl },
-  ].filter((item) => /^https:\/\//.test(item.url));
+    { label: "X", url: project.xUrl, requiresAddress: false },
+    { label: "GitHub", url: project.githubUrl, requiresAddress: false },
+    { label: "Explorer", url: project.explorerUrl, requiresAddress: true },
+    { label: "Buy", url: project.buyUrl, requiresAddress: true },
+  ].filter((item) => /^https:\/\//.test(item.url) && (!item.requiresAddress || Boolean(project.contractAddress.trim())));
 
   return (
     <div className="project-channels">

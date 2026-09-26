@@ -1,0 +1,29 @@
+.card { padding:24px; border:1px solid var(--line); border-radius:16px; background:var(--surface); }
+.header { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.header h2 { margin:0; color:var(--text); font:500 11px/1.8 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing:.1em; text-transform:uppercase; }
+.header h2 span { color:var(--muted); }
+.status { flex-shrink:0; padding:3px 9px; border:1px solid var(--line); border-radius:999px; color:var(--gold); font:500 10px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing:.06em; }
+.addressRow { display:grid; grid-template-columns:minmax(0,1fr) auto auto; align-items:center; gap:8px; margin-top:14px; }
+.address { display:block; width:100%; min-width:0; height:50px; padding:12px 16px; background:var(--surface-alt); border:1px solid var(--line); border-radius:12px; font:400 16px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.copyButton,.buyButton { min-height:44px; padding-inline:20px; }
+.copyButton:disabled,.buyButton:disabled { opacity:.6; }
+.note { margin:10px 0 15px; color:var(--muted); font-size:12px; line-height:1.7; }
+.shortcuts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+.shortcut { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; gap:2px; min-height:66px; min-width:0; padding:12px 16px; border:1px solid var(--line); border-radius:12px; background:var(--surface-alt); text-align:left; color:var(--text); }
+.shortcut strong { font-size:15px; font-weight:600; line-height:1.5; }
+.shortcut span { color:var(--muted); font-size:12px; line-height:1.5; }
+.shortcut:disabled { opacity:1; cursor:not-allowed; }
+.shortcut:disabled strong { color:var(--muted); }
+a.shortcut:hover { border-color:var(--accent); }
+.feedback { display:block; margin-top:12px; color:var(--accent); font-size:12px; line-height:1.7; }
+.feedback:empty { display:none; }
+
+@media(max-width:640px) {
+  .card { padding:20px; }
+  .header { align-items:flex-start; gap:10px; }
+  .header h2 span { display:block; }
+  .addressRow { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .address { grid-column:1 / -1; }
+  .copyButton,.buyButton { width:100%; padding-inline:10px; font-size:13px; }
+  .shortcuts { grid-template-columns:minmax(0,1fr); }
+}

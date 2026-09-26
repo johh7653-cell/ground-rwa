@@ -1,0 +1,9 @@
+.git/
+.next/
+.vercel/
+node_modules/
+docs/design/
+ground-source.zip
+ground-source.zip.tmp
+.env*
+!.env.example

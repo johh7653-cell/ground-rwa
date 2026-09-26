@@ -46,7 +46,7 @@ An actual wallet-extension authorization was not available in the embedded brows
 
 The file export button requested a download, but the embedded browser did not return a completed download event. Clipboard export and pasted-plan validation/import were verified; a completed native file-picker import/download was not claimed. Storage-denial/corruption and failed-write rollback were tested at the storage layer, without deliberately corrupting user browser records.
 
-No buy service, transaction execution, live five-point probe, executed-trade scoreboard or burn service exists. Buying remains disabled as requested. Original project CA, social and purchase/bridge promotion are absent; legitimate third-party issuer/token information remains in the full catalogue. The owner’s GitHub repository is configured in `src/lib/project.ts`; X temporarily points to the platform homepage at the owner's request. CA, explorer and buy links remain empty.
+No buy service, transaction execution, live five-point probe, executed-trade scoreboard or burn service exists. Buying remains disabled as requested. Original project CA, social and purchase/bridge promotion are absent; legitimate third-party issuer/token information remains in the full catalogue. The owner’s GitHub account profile is configured in `src/lib/project.ts`; X temporarily points to the platform homepage at the owner's request. CA, explorer and buy links remain empty.
 
 ## Brand and GitHub presentation update
 
@@ -56,6 +56,6 @@ The repository README has a brand cover, six real component reading paths, produ
 
 ## Header links and CA placement update
 
-`npm run check` passed after adding the project links and shared contract display. Production browser verification confirmed X opens `https://x.com/` and GitHub opens the project repository in separate tabs. Desktop navigation fits at 1001px; the 320px mobile menu contains both links without horizontal overflow. Both external links have `noopener noreferrer`.
+`npm run check` passed after adding the project links and shared contract display. Production browser verification confirmed X opens `https://x.com/` and GitHub opens the owner account profile in separate tabs. Desktop navigation fits at 1001px; the 320px mobile menu contains both links without horizontal overflow. Both external links have `noopener noreferrer`.
 
-The homepage hero shows `Solana CA: TBA` above its primary actions, fully inside the first viewport on desktop and mobile. The footer repeats the same display. No contract copy button exists while the real address configuration is empty; the owner's original project CA has not been restored.
+The homepage now begins with a full contract card, with its address field and status displaying TBA. Copy, Buy, Explorer, DEX Screener and Jupiter are visibly disabled while the real address and destination configuration are empty. The footer repeats the TBA address display. The reference project's original CA has not been restored. A configured address changes the neutral card status to `ADDRESS SET`, not `LIVE`.

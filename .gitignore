@@ -1,5 +1,6 @@
 node_modules/
 .next/
+.vercel/
 out/
 *.tsbuildinfo
 .DS_Store
@@ -9,3 +10,4 @@ out/
 # Local design exploration and downloadable source bundle
 docs/design/
 /ground-source.zip
+.vercel

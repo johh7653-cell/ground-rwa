@@ -7,6 +7,7 @@
 </p>
 
 <p align="center">
+  <a href="https://ground-rwa.vercel.app"><strong>Website</strong></a> &nbsp;·&nbsp;
   <a href="docs/THESIS.md"><strong>Thesis</strong></a> &nbsp;·&nbsp;
   <a href="docs/modules/catalogue.md"><strong>Catalogue</strong></a> &nbsp;·&nbsp;
   <a href="docs/METHOD.md"><strong>Method</strong></a> &nbsp;·&nbsp;
@@ -94,6 +95,8 @@ The research workspace, public APIs, wallet connection and Trade preview are imp
 | Independent market references and Trade preview | Reproducible live probes and fill verification |
 
 [Implementation roadmap →](docs/ROADMAP.md) &nbsp; [Verification record →](docs/VERIFICATION.md)
+
+The public workspace is available at [ground-rwa.vercel.app](https://ground-rwa.vercel.app). [Deployment guide →](docs/DEPLOYMENT.md)
 
 ## Build with GROUND
 

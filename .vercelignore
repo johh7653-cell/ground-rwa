@@ -2,6 +2,9 @@
 .next/
 .vercel/
 node_modules/
+*.tsbuildinfo
+out/
+.DS_Store
 docs/design/
 ground-source.zip
 ground-source.zip.tmp

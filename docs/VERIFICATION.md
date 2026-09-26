@@ -59,3 +59,9 @@ The repository README has a brand cover, six real component reading paths, produ
 `npm run check` passed after adding the project links and shared contract display. Production browser verification confirmed X opens `https://x.com/` and GitHub opens the owner account profile in separate tabs. Desktop navigation fits at 1001px; the 320px mobile menu contains both links without horizontal overflow. Both external links have `noopener noreferrer`.
 
 The homepage now begins with a full contract card, with its address field and status displaying TBA. Copy, Buy, Explorer, DEX Screener and Jupiter are visibly disabled while the real address and destination configuration are empty. The footer repeats the TBA address display. The reference project's original CA has not been restored. A configured address changes the neutral card status to `ADDRESS SET`, not `LIVE`.
+
+## Vercel production deployment
+
+Application commit `184d61a` deployed successfully to [ground-rwa.vercel.app](https://ground-rwa.vercel.app) and reached READY. All **83 public HTTP catalogue checks** passed against that URL, including complete pagination and deep comparison with the local source JSON. Public quote and balance endpoints returned valid responses, an invalid wallet address returned 400, and the hosted logo is byte-identical to the owner-supplied PNG.
+
+The embedded browser encountered a proxy tunnel connection failure when opening the Vercel page. Final layout screenshots and contract-control inspection use the same application build on the local production server; these are separate from the successful public HTTP checks. Both website GitHub anchors resolve to `https://github.com/johh7653-cell`.

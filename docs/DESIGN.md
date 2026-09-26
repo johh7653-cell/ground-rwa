@@ -27,7 +27,11 @@ DESIGN_VARIANCE: 4. MOTION_INTENSITY: 3. VISUAL_DENSITY: 7. Native CSS and the e
 
 Home, the complete 1,936-record directory, all asset details, 16 markets and networks, 50 issuers, source and coverage pages, blueprint, asset basket, comparison, random discovery, device workspace, documentation and thesis. Search, pagination, source/category/issuer/network/coverage filters, local plans and read-only JSON APIs are implemented. Home restores category shelves, original asset identity media, historical ranking, source counts and issuer links. Keep the simple black-green design while restoring information density. Watchlist, URL filters, plan import/export, Wallet Standard connection and Solana Trade preview extend the usable product. Current market references remain separate from dated archive data; actual buying is not integrated.
 
-All original project contract addresses, token branding and project-channel links are absent from the application. Project details are held in one configuration object. The owner’s GitHub repository is configured; other channels remain empty. Official third-party asset information is kept separate.
+All original project contract addresses, token branding and project-channel links are absent from the application. Project details are held in one configuration object. The owner’s GitHub repository is configured; X temporarily points to the platform homepage at the owner’s request, pending their account URL. Contract, explorer and buy channels remain empty. Official third-party asset information is kept separate.
+
+The header adds compact project links between the main navigation and wallet button. Links open in a new tab and use the central channel configuration; an unset X account does not create a placeholder destination. At 1000px and below, project links move into the mobile navigation with the rest of the header menu, preserving the full wordmark and wallet controls.
+
+The homepage hero displays `Solana CA: TBA` prominently above its primary actions, with the same address repeated in the shared footer. The placeholder has no copy control or explorer destination. A configured real address updates both placements and restores the existing copy action.
 
 ## Brand logo and GitHub presentation
 

@@ -74,7 +74,7 @@ Trade currently calculates price-reference quantities from USD sample amounts, w
 
 ## Add your own project channels
 
-`src/lib/project.ts` points to this project’s GitHub repository. Add your own Solana contract address, X, explorer and purchase URLs when ready. Empty fields are hidden. The original project's CA, social channels and purchase/bridge redirects are removed; third-party asset addresses and issuer research links are retained.
+`src/lib/project.ts` points to this project’s GitHub repository. X temporarily points to `https://x.com/`, pending the owner's account URL. Replace `contractAddress` with your own Solana CA when ready: the homepage hero and shared footer currently show `Solana CA: TBA` and only offer copying after an address is configured. Empty explorer and purchase URLs stay hidden. The original project's CA, social channels and purchase/bridge redirects are removed; third-party asset addresses and issuer research links are retained.
 
 ## Check
 

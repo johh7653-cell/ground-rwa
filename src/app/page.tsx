@@ -3,6 +3,7 @@ import { ArrowRight, Building2, ChartNoAxesCombined, Gem, Landmark } from "lucid
 import { AssetExplorer } from "@/components/AssetExplorer";
 import { Blueprint, BlueprintPreview } from "@/components/Blueprint";
 import { RightsAccordion } from "@/components/RightsAccordion";
+import { ProjectContractAddress } from "@/components/ProjectChannels";
 import { categories } from "@/lib/assets";
 import { getArchivedAsset, networkLabel } from "@/lib/catalogue";
 import { assetMediaUrl } from "@/lib/catalogue-media";
@@ -20,6 +21,7 @@ export default function HomePage() {
         <p className="hero-label">Real-world assets on Solana</p>
         <h1><span>Your wallet.</span><span>A real-world side.</span></h1>
         <p className="hero-description">Explore tokenized assets. Give each part of your wallet a purpose.</p>
+        <ProjectContractAddress className="hero-contract" />
         <div className="hero-actions"><Link className="button primary" href="/assets/">Explore assets <ArrowRight size={18} /></Link><Link className="button secondary" href="/blueprint/">Build my blueprint</Link></div>
       </div>
       <BlueprintPreview />

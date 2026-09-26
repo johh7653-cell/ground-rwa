@@ -46,10 +46,16 @@ An actual wallet-extension authorization was not available in the embedded brows
 
 The file export button requested a download, but the embedded browser did not return a completed download event. Clipboard export and pasted-plan validation/import were verified; a completed native file-picker import/download was not claimed. Storage-denial/corruption and failed-write rollback were tested at the storage layer, without deliberately corrupting user browser records.
 
-No buy service, transaction execution, live five-point probe, executed-trade scoreboard or burn service exists. Buying remains disabled as requested. Original project CA, social and purchase/bridge promotion are absent; legitimate third-party issuer/token information remains in the full catalogue. The owner’s GitHub repository is configured in `src/lib/project.ts`; CA, X, explorer and buy links remain empty.
+No buy service, transaction execution, live five-point probe, executed-trade scoreboard or burn service exists. Buying remains disabled as requested. Original project CA, social and purchase/bridge promotion are absent; legitimate third-party issuer/token information remains in the full catalogue. The owner’s GitHub repository is configured in `src/lib/project.ts`; X temporarily points to the platform homepage at the owner's request. CA, explorer and buy links remain empty.
 
 ## Brand and GitHub presentation update
 
 The owner-supplied 512px PNG is preserved byte-for-byte in the website logo, site/Apple icons and GitHub brand mark (SHA-256 `3fcc265cb28537a7c5d64f95a8dbdd9f7d961d3f722d1033e25e543d136efc04`). Production browser checks confirmed a loaded 29px desktop navigation logo, 24px mobile logo at 320px without horizontal overflow, and a loaded 24px footer logo. The production document points to the new PNG site and Apple icons.
 
 The repository README has a brand cover, six real component reading paths, product screenshots and a concise current-stage description. Developer details are retained in `docs/DEVELOPMENT.md`. The owner-requested account profile is published at [johh7653-cell](https://github.com/johh7653-cell), with its README and original logo in the account’s same-name repository.
+
+## Header links and CA placement update
+
+`npm run check` passed after adding the project links and shared contract display. Production browser verification confirmed X opens `https://x.com/` and GitHub opens the project repository in separate tabs. Desktop navigation fits at 1001px; the 320px mobile menu contains both links without horizontal overflow. Both external links have `noopener noreferrer`.
+
+The homepage hero shows `Solana CA: TBA` above its primary actions, fully inside the first viewport on desktop and mobile. The footer repeats the same display. No contract copy button exists while the real address configuration is empty; the owner's original project CA has not been restored.

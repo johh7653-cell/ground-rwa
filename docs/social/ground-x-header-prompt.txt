@@ -1,0 +1,22 @@
+Generation mode: built-in image_gen tool.
+Final file: ground-x-header.png (2172 x 724, exact 3:1).
+Reference inputs: the owner's supplied Grail X header and orange/grey GROUND logo.
+
+Use case: ads-marketing.
+Create one finished X / Twitter profile header for the existing GROUND Solana RWA project. Canvas must be an ultrawide 3:1 horizontal banner, ideally 1500 x 500 pixels or equivalent exact 3:1, edge-to-edge, not a mockup.
+Input image 1 is a composition/style reference ONLY: the original GRAIL header. Keep its restrained almost-black background, strong white typography on the left, and two oversized overlapping circular ink seals on the right. Make an original GROUND version rather than retaining any GRAIL marks or copy.
+Input image 2 is the owner's EXACT supplied logo, a flat orange rounded square with a grey cartoon face, white double eyes, black pupils and smile. Insert this logo faithfully as a small approximately 130px square at the upper left. Preserve its original artwork, colors, proportions, expression and rounded square; do not redesign it.
+Left half: at approximately x=55 y=65 place that logo. To its right place bold clean uppercase white wordmark "GROUND", generously sized, readable and carefully aligned. At x=55, y=285 put the brand slogan in two clear lines, white, simple sans serif:
+"Your wallet."
+"A real-world side."
+The slogan fits comfortably inside the banner, leaving bottom and side margins, with no text clipped.
+Right half: a subtle nearly black forest-green panel blending into charcoal. Two large diagonal distressed circular stamps overlap and are partly cropped by the top/right canvas edges, just like the reference. Behind, a subdued grey stamp with thin ring geometry and two centered lines of text:
+"KNOW WHAT"
+"YOU HOLD."
+In front, a muted fresh green ink seal with fine geometric lattice inside its ring, two bold centered lines:
+"REAL-WORLD"
+"SIDE."
+Small readable line within that front seal: "SOLANA · REAL-WORLD ASSETS".
+Use flat print design, restrained ink distress only on the stamps. Minimal, sophisticated, dark, calm. Typography crisp and professional. The cartoon logo adds the only orange accent. Match the reference's simple black style and balanced empty space. This should be a finished banner suitable for direct uploading, not an image of a page or device.
+Exact visible text only: GROUND; Your wallet.; A real-world side.; KNOW WHAT; YOU HOLD.; REAL-WORLD; SIDE.; SOLANA · REAL-WORLD ASSETS.
+Avoid all GRAIL branding, G logos, original slogans, claims of verified execution or 100% executable, buy buttons, token contracts, Twitter handles, URLs, financial promises, extra badges, extra mascots, neon glow, 3D effects, gradients beyond the subtle dark background transition, or watermarks.

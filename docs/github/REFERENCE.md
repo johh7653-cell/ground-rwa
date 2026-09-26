@@ -14,6 +14,6 @@ Read on 26 September 2026. The original source ZIP's footer links to [github.com
 
 The five main repositories each exposed README.md as their only file and one commit when reviewed. The API README describes a blueprint contract, and the ledger README labels its example figures illustrative. Their public descriptions do not supply a functioning engine or trading service to integrate.
 
-GROUND uses this separation of concerns to organize its own project. Its main repository contains the runnable app and existing data/tools. The GitHub profile text is prepared separately in `PROFILE.md`; no owner account, domain or remote repository is invented.
+GROUND uses this separation of concerns to organize its own project. Its main repository contains the runnable app and existing data/tools. The GitHub profile text is prepared separately in `PROFILE.md`; the source repository is published at [johh7653-cell/ground-rwa](https://github.com/johh7653-cell/ground-rwa) and the owner-requested GROUND account profile is published at [johh7653-cell](https://github.com/johh7653-cell). The website domain remains undecided.
 
 The reference's branding, promotional contract, token economics, revenue/burn claims and social links are not adopted. Archive records and original identity media retain their source provenance and the supplied archive's MIT notice.

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Layers3 } from "lucide-react";
+import Image from "next/image";
 import { ProjectChannels } from "./ProjectChannels";
 
 export function Footer() {
@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container">
         <div className="footer-main">
           <div>
-            <Link href="/" className="wordmark"><Layers3 size={24} strokeWidth={1.7} aria-hidden="true" /><span>GROUND</span></Link>
+            <Link href="/" className="wordmark"><Image src="/ground-logo.png" className="brand-mark" width={24} height={24} alt="" aria-hidden="true" /><span>GROUND</span></Link>
             <p>A real-world side to your Solana wallet.</p>
           </div>
           <nav aria-label="Footer navigation">

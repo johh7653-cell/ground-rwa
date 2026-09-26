@@ -54,7 +54,7 @@ h3 { letter-spacing: -.025em; line-height: 1.35; }
 .site-header { position: sticky; top: 0; z-index: 10; background: var(--bg); border-bottom: 1px solid var(--line); }
 .header-inner { height: 72px; display: flex; align-items: center; gap: 32px; }
 .wordmark { display: inline-flex; gap: 11px; align-items: center; font-size: 21px; font-weight: 700; letter-spacing: .12em; line-height: 1; }
-.wordmark svg { color: var(--accent); }
+.brand-mark { display: block; flex-shrink: 0; object-fit: contain; }
 .desktop-nav { display: flex; gap: 26px; margin-left: auto; align-items:center; }
 .nav-group { position:relative; }
 .nav-group > button { display:flex; align-items:center; gap:6px; border:0; background:transparent; color:var(--muted); font-size:13px; padding:12px 0; }
@@ -171,7 +171,7 @@ h3 { letter-spacing: -.025em; line-height: 1.35; }
   .container { width: calc(100% - 40px); }
   .header-inner { height: 64px; gap: 16px; }
   .wordmark { font-size: 18px; gap: 9px; }
-  .wordmark svg { width: 24px; }
+  .site-header .brand-mark { width: 24px; height: 24px; }
   .desktop-nav { display: none; }
   .network-label { margin-left: auto; border: 0; padding: 0; font-size: 11px; }
   .menu-button { display: inline-flex; }

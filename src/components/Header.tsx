@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ChevronDown, Layers3, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { project } from "@/lib/project";
 import { WalletButton } from "./WalletButton";
@@ -25,7 +26,7 @@ export function Header() {
     <header className="site-header">
       <div className="container header-inner">
         <Link href="/" className="wordmark" aria-label={`${project.name} home`} onClick={closeNavigation}>
-          <Layers3 size={29} strokeWidth={1.7} aria-hidden="true" />
+          <Image src="/ground-logo.png" className="brand-mark" width={29} height={29} alt="" aria-hidden="true" />
           <span>{project.name}</span>
         </Link>
         <nav className="desktop-nav" aria-label="Main navigation">

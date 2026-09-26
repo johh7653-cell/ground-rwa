@@ -1,97 +1,128 @@
-# GROUND
+<p align="center">
+  <img src="docs/github/assets/ground-cover.png" alt="GROUND — Your wallet. A real-world side. Solana · Real-world assets." width="100%" />
+</p>
 
-**Your wallet. A real-world side.**
+<p align="center">
+  A Solana-first workspace for the real world behind your tokens.
+</p>
 
-GROUND is a Solana-first workspace for understanding tokenized real-world assets. Start with what a product represents, follow its issuer and data sources, and build a plan with your own budget. The interface stays simple and dark while keeping the complete catalogue visible.
+<p align="center">
+  <a href="docs/THESIS.md"><strong>Thesis</strong></a> &nbsp;·&nbsp;
+  <a href="docs/modules/catalogue.md"><strong>Catalogue</strong></a> &nbsp;·&nbsp;
+  <a href="docs/METHOD.md"><strong>Method</strong></a> &nbsp;·&nbsp;
+  <a href="docs/API.md"><strong>API</strong></a> &nbsp;·&nbsp;
+  <a href="docs/ROADMAP.md"><strong>Roadmap</strong></a>
+</p>
 
-This repository contains the working Next.js application, its data layer, public APIs, wallet connection, research tools and documentation.
+<p align="center">
+  <a href="docs/modules/wallet.md"><img src="https://img.shields.io/badge/Solana-Wallet_Standard-28c487?style=flat-square&amp;labelColor=101214" alt="Solana · Wallet Standard" /></a>
+  <a href="docs/modules/catalogue.md"><img src="https://img.shields.io/badge/Catalogue-1%2C936_assets-101214?style=flat-square&amp;labelColor=1d2226" alt="Catalogue · 1,936 assets" /></a>
+  <a href="https://github.com/johh7653-cell/ground-rwa/actions/workflows/ci.yml"><img src="https://github.com/johh7653-cell/ground-rwa/actions/workflows/ci.yml/badge.svg" alt="Build and tests" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-101214?style=flat-square&amp;labelColor=1d2226" alt="MIT license" /></a>
+</p>
 
-[GitHub repository](https://github.com/johh7653-cell/ground-rwa) · [Project profile copy](docs/github/PROFILE.md)
+---
 
-![GROUND website](docs/preview-home.png)
+## The idea
 
-## Project map
+A ticker tells you what a token is called. It rarely tells you what sits behind it.
 
-| Component | Implementation | Purpose |
-| --- | --- | --- |
-| Website | `src/app`, `src/components` | Asset discovery, issuer/source pages, watchlist, planning tools and Trade preview |
-| Catalogue | `src/data`, `src/lib/catalogue.ts` | Complete dated records and original identity media |
-| Market references | `src/lib/live-market*.ts` | Validated indexed market data, provenance, timeouts and cache |
-| Wallet access | `src/lib/wallet.ts`, `WalletProvider.tsx` | Public Solana accounts and read-only mainnet SOL balance |
-| Public API | `src/app/api` | Actual archive, market-reference and balance endpoints |
-| Methods & product | `docs` | Thesis, data meanings, API contract, architecture and roadmap |
-| Verification | `src/lib/*.test.mjs`, `scripts`, `.github/workflows` | Boundary tests, production checks and continuous integration |
+GROUND connects an asset to its issuer, product structure, source trail and market reference. Stocks, funds, metals, property and credit become a library you can explore, compare and organize around your own budget.
 
-## Read the project
+**Understand the asset. Follow the source. Build your own plan.**
 
-- [Thesis](docs/THESIS.md) — the GROUND narrative.
-- [Method](docs/METHOD.md) — historical observations, current references and unit calculations.
-- [API](docs/API.md) — implemented endpoints and errors.
-- [Architecture](docs/ARCHITECTURE.md) — how the running application fits together.
-- [Roadmap](docs/ROADMAP.md) — completed work and future execution milestones.
-- [Verification](docs/VERIFICATION.md) — checks and practical limits.
-- [GitHub profile copy](docs/github/PROFILE.md) — account/organization introduction ready to adapt.
-- [GitHub publishing notes](docs/github/README.md) — prepared materials and publication setup.
-- [Contributing](CONTRIBUTING.md) — development and review workflow.
+## The system
 
-## Run locally
+One codebase, six connected components.
+
+| Component | Role | What you can inspect |
+| :--- | :--- | :--- |
+| [**ground-workspace**](docs/modules/workspace.md) | The front door | Discovery, asset details, watchlists, allocation tools and Trade preview |
+| [**ground-catalogue**](docs/modules/catalogue.md) | The source library | 1,936 asset records, 50 issuers, 16 categories and original identity media |
+| [**ground-market**](docs/modules/market.md) | The market context | Independently fetched references, token/network matching and dated archive curves |
+| [**ground-wallet**](docs/modules/wallet.md) | The public account | Wallet Standard connection, account changes and native SOL balance |
+| [**ground-interface**](docs/modules/interface.md) | The public API | Implemented catalogue, asset, issuer, source, market-reference and balance endpoints |
+| [**ground-canon**](docs/modules/canon.md) | The published method | Thesis, calculation rules, data provenance, architecture and roadmap |
+
+## From discovery to a plan
+
+<p>
+  <img src="docs/github/assets/architecture.png" alt="Explore the catalogue, trace issuers and sources, plan a local allocation, connect a public wallet account and preview a market reference. Buying is not enabled." width="100%" />
+</p>
+
+| Step | What happens |
+| :--- | :--- |
+| **Explore** | Search every product, filter the directory and open the underlying record. |
+| **Trace** | Follow its issuer, addresses, sources and dated market observations. |
+| **Plan** | Build a category Blueprint or asset Basket. Save, export and restore your allocations. |
+| **Connect** | Choose a compatible Solana wallet and read the public account's SOL balance. |
+| **Preview** | Select a Solana asset and amount. Inspect a market reference and indicative quantity. |
+
+## Inside the workspace
+
+<p>
+  <a href="docs/modules/workspace.md"><img src="docs/preview-home.png" alt="GROUND home with the budget planner and full asset library" width="49%" /></a>
+  <a href="docs/modules/catalogue.md"><img src="docs/preview-assets.png" alt="GROUND asset directory with search, issuers, source filters and saved market fields" width="49%" /></a>
+</p>
+
+A quiet black interface, complete product records and practical tools. Discovery and planning work without a wallet.
+
+## Data with a source trail
+
+| Library | Coverage |
+| :--- | :--- |
+| Asset records | **1,936** |
+| Issuers | **50** |
+| Categories | **16** |
+| Networks in the source archive | **16** |
+| Primary Solana quote-network records | **1,042** |
+| Archive date | **23 September 2026** |
+
+Historical observations keep their original dates. Current market references show their own fetch time and source. Unknown values remain unknown; metal units are labelled and converted explicitly.
+
+[Read the data standard →](docs/METHOD.md)
+
+## Current stage
+
+The research workspace, public APIs, wallet connection and Trade preview are implemented. Trade shows indicative quantities from indexed market references. **Buying and transaction signing are not enabled.**
+
+| Available | Next integration |
+| :--- | :--- |
+| Full catalogue, sources and historical curves | Executable routes and fee breakdown |
+| Watchlists and validated local allocation plans | Token units, simulation and wallet approval |
+| Public Solana account and SOL balance | Transaction submission and confirmation |
+| Independent market references and Trade preview | Reproducible live probes and fill verification |
+
+[Implementation roadmap →](docs/ROADMAP.md) &nbsp; [Verification record →](docs/VERIFICATION.md)
+
+## Build with GROUND
+
+**Next.js 16 · React 19 · TypeScript · Wallet Standard · CSS Modules**
 
 Requires Node.js 22 or later.
 
 ```sh
-npm install
+npm ci
 npm run dev
 ```
 
-Open http://127.0.0.1:4345. For a production build, run `npm run build` followed by `npm start`.
-
-## Included
-
-- All 1,936 asset records, 50 issuers, 16 categories and 16 supported networks, preserved from the archive.
-- Search, pagination, list/grid views, category/network/issuer/source/coverage filters, shareable filter URLs, and a persistent device-local watchlist.
-- Every asset detail, with saved backing descriptions, addresses, source links, market fields, archive marks and available probe curves.
-- Original asset and issuer identity images, copied locally through the archive's media map.
-- Home category shelves, historical liquidity ranking, source counts, issuer links and a sample-budget calculator.
-- Markets, issuers, data sources and archive coverage/statistics pages.
-- Blueprint, full-catalogue baskets, random discovery, saved-price/sample comparisons and a device-local workspace with validated JSON plan import/export.
-- Wallet Standard connection, account selection/disconnection and read-only Solana mainnet SOL balance.
-- Solana Trade preview with actual DEX Screener market references; buy execution is deliberately disabled until the user connects their own service.
-- Documentation, the GROUND thesis, complete JSON download and working read-only data APIs.
-
-The catalogue is dated 23 September 2026. It is a saved archive. Separately fetched DEX Screener references are labelled with their actual fetch time and provenance; they do not replace historical observations. A record's `chain` is its observed quote network; `chains` lists saved supported deployments. Unknown prices stay null. Metal prices marked `perOz` remain labelled per troy ounce, while quantity tools convert them to grams. Displayed xStock reference quantities are not raw wallet token balances.
-
-Eleven references additionally retain researched product-rights descriptions for the Blueprint and featured cards. These do not limit the full directory. USDY and XAUm have no saved Solana quote in that layer; their original Ethereum/BNB historical records remain available separately.
-
-The site connects compatible Solana wallets to their public accounts and reads SOL balances. It does not request signatures, execute trades, issue assets or claim that a GROUND token owns the listed assets. Platform trades, fees and user counts from the original project's hardcoded statistics were not reused as GROUND statistics.
-
-## Data APIs
-
-`/api/catalogue`, `/api/assets`, `/api/assets/[slug]`, `/api/issuers`, `/api/sources` serve the saved archive. The assets endpoint supports `q`, `category`, `network`, `issuer`, `source`, `limit` (1–100) and `offset`. See `/docs/` for the fields and methods.
-
-`/api/quotes?slugs=spyx,nvdax` fetches indexed market references for up to 24 catalogue assets. Server requests use catalogue addresses, match the base token and network, and cache for 30 seconds. No matching market, missing address and provider failures stay unavailable. These are not executable quotes.
-
-`/api/wallet/balance?address=...` reads the public mainnet SOL balance, caching for 15 seconds with its original observation time. The optional server-only `SOLANA_RPC_URL` must resolve to Solana mainnet. See `/docs/` for usage.
-
-Wallet connection needs a compatible wallet in the browser. The embedded preview displays installation links if no wallet is detected. Wallet sessions and addresses are not stored in planning files.
-
-## Connect buying later
-
-Trade currently calculates price-reference quantities from USD sample amounts, with a future slippage preference. A production execution integration must obtain executable routes and fees, apply token decimals/display multipliers, simulate and request an explicit wallet transaction. No transaction-signing or order-submission implementation is present; connecting a wallet does not enable buying.
-
-## Add your own project channels
-
-`src/lib/project.ts` points to this project’s GitHub repository. Add your own Solana contract address, X, explorer and purchase URLs when ready. Empty fields are hidden. The original project's CA, social channels and purchase/bridge redirects are removed; third-party asset addresses and issuer research links are retained.
-
-## Check
+Open [127.0.0.1:4345](http://127.0.0.1:4345).
 
 ```sh
 npm run check
 npm test
-node scripts/verify-catalogue-api.mjs
-# Or launch a separate production server, verify it, and cleanly stop it:
-node scripts/verify-production.mjs 4351
+node scripts/verify-production.mjs
 ```
 
-The catalogue API command needs the app running on port 4345. An optional first argument overrides the base URL. The production wrapper requires a completed build and uses an isolated port; it refuses to take over an occupied port. GitHub Actions runs the checks on Node.js 22 and 24 for pushes and pull requests. The workflow does not deploy the website.
+GitHub Actions checks Node.js 22 and 24, including production archive APIs.
 
-Design rules, source auditing and verification evidence are in `docs`. The downloaded ZIP remains unchanged. Its MIT licence is retained in `LICENSE`. Product names and logos identify their respective issuers and do not imply a partnership.
+[Development guide →](docs/DEVELOPMENT.md) &nbsp; [API reference →](docs/API.md) &nbsp; [Contributing →](CONTRIBUTING.md)
+
+---
+
+<p align="center">
+  <img src="docs/github/assets/ground-mark.png" alt="GROUND mark" width="40" /><br />
+  <strong>Your wallet. A real-world side.</strong><br />
+  <sub>Product names and imagery identify their respective issuers. GROUND does not issue the listed assets.<br />
+  Original archive provenance and the <a href="LICENSE">MIT licence</a> are retained.</sub>
+</p>
